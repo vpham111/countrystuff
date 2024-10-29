@@ -1,0 +1,47 @@
+.facts-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .headers-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 6 equal-width columns */
+  }
+  
+  .content-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 6 equal-width columns */
+    overflow-y: auto;
+    height: 400px; /* Fixed height for the scrollable area */
+  }
+  
+  .scrollable {
+    display: contents; /* Makes each row a direct child of the grid */
+  }
+  
+
+  
+  p, img {
+    margin: 0;
+  }
+  
+  .charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+  }
+  
+  .chart-wrapper {
+    flex: 1 1 45%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chart-wrapper h5 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  

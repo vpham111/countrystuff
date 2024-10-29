@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -41,31 +40,3 @@
   color: #888;
 }
 
-.facts-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.headers-row {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
-}
-
-.content-row {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
-  overflow-y: auto;
-  height: 400px; /* Fixed height for the scrollable area */
-}
-
-.scrollable {
-  display: contents; /* Makes each row a direct child of the grid */
-}
-
-.attr-col {
-  padding: 0 10px;
-}
-
-p, img {
-  margin: 0;
-}
